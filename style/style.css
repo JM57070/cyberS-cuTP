@@ -1,0 +1,84 @@
+/*Thème général hacker vert fluo*/
+
+body {
+    background-color: #000000;
+    color: #00ff88; /* Vert fluo */
+    font-family: "Consolas", "Courier New", monospace;
+}
+
+/* Effet glow*/
+.glow-green, h1, h2, h3, h4, p, pre {
+    text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88;
+}
+
+/* Carte effet néon vert */
+.hacker-border {
+    border: 2px solid #00ff88 !important;
+    box-shadow: 0 0 12px #00ff88, 0 0 25px #00ff88 inset;
+    border-radius: 8px;
+}
+
+
+textarea, input {
+    background-color: #001a0f !important;
+    color: #00ff88 !important;
+    border: 2px solid #00ff88 !important;
+    box-shadow: 0 0 10px #00ff88;
+}
+
+textarea:focus, input:focus {
+    outline: none !important;
+    box-shadow: 0 0 12px #00ff88, 0 0 20px #00ff88;
+}
+
+
+.btn {
+    border: 2px solid #00ff88 !important;
+    background-color: transparent !important;
+    color: #00ff88 !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #00ff88 !important;
+    color: #000 !important;
+    box-shadow: 0 0 15px #00ff88, 0 0 35px #00ff88;
+}
+
+/*NavBar Hacker */
+.navbar {
+    border-bottom: 2px solid #00ff88;
+    box-shadow: 0 0 12px #00ff88;
+}
+
+.navbar-brand, .nav-link {
+    color: #00ff88 !important;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88;
+}
+
+
+pre {
+    background-color: #000;
+    padding: 15px;
+    border: 1px solid #00ff88;
+    box-shadow: 0 0 15px #00ff88 inset;
+    white-space: pre-wrap;
+}
+
+/*Animation légère de scan vertical */
+@keyframes scanline {
+    0% { opacity: 0.15; }
+    50% { opacity: 0.3; }
+    100% { opacity: 0.15; }
+}
+
+.scan-effect {
+    animation: scanline 3s infinite;
+    background: linear-gradient(to bottom, transparent, rgba(0,255,136,0.15), transparent);
+}
