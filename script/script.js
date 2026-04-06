@@ -173,7 +173,7 @@ function launchCesarBruteforce() {
 
             const message = "QJ HTIJ XJHWJY JXY HFMJ IFSX QJ KNHMNJW OFAFXHWNUY";
 
-            // Analyse via ton script.js
+            // Analyse via js
             const { results, bestText } = bruteForceCesarAnalysis(message);
 
             let html = "";
@@ -273,7 +273,7 @@ function bruteForceCesarAnalysis(message) {
             }
         }
 
-        // Score = fréquence de E + espaces → détecte le texte FR
+        // Score = fréquence de E + espaces +  texte 
         let score =
             (decrypted.match(/E/g) || []).length +
             (decrypted.match(/ /g) || []).length;
